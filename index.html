@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Waves Restaurant - High-quality North Indian, Chinese, and Mughlai dishes in Ramgarh Cantonment.">
+    <title>The Waves Restaurant | Ramgarh Cantonment</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-water"></i>
+                The Waves
+            </a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-item">Home</a></li>
+                    <li><a href="#menu" class="nav-item">Menu</a></li>
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#reviews" class="nav-item">Reviews</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <a href="#" class="btn btn-outline" id="headerLoginBtn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Login</a>
+            
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            
+            <a href="tel:08092201666" class="contact-btn">
+                <i class="fa-solid fa-phone"></i> 080922 01666
+            </a>
+            
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="assets/images/hero_bg.png" alt="Restaurant Interior" class="hero-bg">
+        <div class="hero-overlay"></div>
+        
+        <div class="container relative">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-star"></i> Top Rated in Ramgarh
+                </div>
+                <h1 class="hero-title">Quality Food in the <br><span>Heart of Ramgarh</span></h1>
+                <p class="hero-desc">North Indian, Chinese & Mughlai Delights. Experience the best family-friendly dining environment with exceptional taste, perfect for all your celebrations.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#contact" class="btn btn-outline">Find Us</a>
+                </div>
+            </div>
+            
+            <div class="popular-times-widget">
+                <div class="live-indicator"></div>
+                <div class="pt-text">
+                    <strong>Live: Not too busy</strong>
+                    Usually uncrowded at this time
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid reveal">
+                <div class="about-image reveal">
+                    <img src="assets/images/about_main.png" alt="Restaurant Interior" class="img-main">
+                    <img src="assets/images/about_float.png" alt="Special Dish" class="img-float">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title" style="transform:none; left:0; margin-bottom: 2rem;">Our Story</h2>
+                    <p>The Waves Restaurant is a family-friendly restaurant in Ramgarh Cantonment, known for its high-quality North Indian, Chinese, and Mughlai dishes. Perfect for parties, gatherings, and casual dining, we strive to provide an unforgettable culinary experience.</p>
+                    <p>Established with a passion for flavor and community, every dish is crafted with fresh ingredients and authentic spices.</p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                            <div class="info-text">
+                                <h4>Opening Hours</h4>
+                                <p>10:00 AM – 10:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fa-solid fa-wallet"></i></div>
+                            <div class="info-text">
+                                <h4>Average Cost</h4>
+                                <p>₹200–400 per person</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title reveal">Popular Dishes</h2>
+            
+            <div class="menu-filter reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="north-indian">North Indian</button>
+                <button class="filter-btn" data-filter="chinese">Chinese</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-item reveal reveal-delay-1" data-category="north-indian">
+                    <div class="menu-badge">Bestseller</div>
+                    <img src="assets/images/paneer_butter_masala.png" alt="Paneer Butter Masala" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-title">Paneer Butter Masala</h3>
+                            <span class="menu-price">₹280</span>
+                        </div>
+                        <p class="menu-desc">Rich and creamy curry made with paneer, spices, onions, tomatoes, cashews and butter.</p>
+
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="menu-item reveal reveal-delay-2" data-category="north-indian">
+                    <img src="assets/images/mix_veg_curry.png" alt="Mix Veg" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-title">Mix Veg</h3>
+                            <span class="menu-price">₹220</span>
+                        </div>
+                        <p class="menu-desc">A delicious medley of seasonal vegetables cooked in a flavorful onion-tomato gravy.</p>
+
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="menu-item reveal reveal-delay-3" data-category="chinese">
+                    <img src="assets/images/mixed_noodles.png" alt="Mixed Noodles" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-title">Mixed Noodles</h3>
+                            <span class="menu-price">₹190</span>
+                        </div>
+                        <p class="menu-desc">Wok-tossed noodles with egg and vegetables in authentic Chinese sauces.</p>
+
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="menu-item reveal reveal-delay-1" data-category="north-indian">
+                    <div class="menu-badge">Chef's Special</div>
+                    <img src="assets/images/paneer_dehati.png" alt="Paneer Dehati" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-title">Paneer Dehati</h3>
+                            <span class="menu-price">₹290</span>
+                        </div>
+                        <p class="menu-desc">A rustic, spicy preparation of cottage cheese cooked homestyle with whole spices.</p>
+
+                    </div>
+                </div>
+                
+                <!-- Item 5 -->
+                <div class="menu-item reveal reveal-delay-2" data-category="chinese">
+                    <img src="assets/images/pineapple_chilli.png" alt="Pineapple Chilli" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-title">Pineapple Chilli</h3>
+                            <span class="menu-price">₹240</span>
+                        </div>
+                        <p class="menu-desc">Sweet and spicy fusion dish combining fresh pineapple chunks with chili garlic sauce.</p>
+
+                    </div>
+                </div>
+                
+                <!-- Item 6 -->
+                <div class="menu-item reveal reveal-delay-3" data-category="desserts">
+                    <img src="assets/images/signature_cakes.png" alt="Signature Cakes" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-title">Signature Cakes</h3>
+                            <span class="menu-price">₹450+</span>
+                        </div>
+                        <p class="menu-desc">Custom celebration cakes available in chocolate truffle, black forest, and fruit flavors.</p>
+
+                    </div>
+                </div>
+                <!-- Item 7 -->
+                <div class="menu-item reveal reveal-delay-1" data-category="north-indian">
+                    <img src="assets/images/chicken_tikka_masala.png" alt="Chicken Tikka Masala" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-title">Chicken Tikka Masala</h3>
+                            <span class="menu-price">₹350</span>
+                        </div>
+                        <p class="menu-desc">Roasted marinated chicken chunks in a spiced curry sauce with vibrant flavors.</p>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="menu-item reveal reveal-delay-2" data-category="chinese">
+                    <div class="menu-badge">Popular</div>
+                    <img src="assets/images/hakka_noodles.png" alt="Hakka Noodles" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-title">Veg Hakka Noodles</h3>
+                            <span class="menu-price">₹180</span>
+                        </div>
+                        <p class="menu-desc">Classic Indo-Chinese style noodles stir-fried with fresh crisp vegetables.</p>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="menu-item reveal reveal-delay-3" data-category="chinese">
+                    <img src="assets/images/veg_manchurian.png" alt="Veg Manchurian" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-title">Veg Manchurian</h3>
+                            <span class="menu-price">₹210</span>
+                        </div>
+                        <p class="menu-desc">Deep-fried vegetable balls in a spicy, sweet, and tangy dark soy sauce.</p>
+                    </div>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="menu-item reveal reveal-delay-1" data-category="desserts">
+                    <img src="assets/images/gulab_jamun.png" alt="Gulab Jamun" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-title">Gulab Jamun</h3>
+                            <span class="menu-price">₹90</span>
+                        </div>
+                        <p class="menu-desc">Soft, melt-in-the-mouth milk solid dumplings soaked in rose-flavored sugar syrup.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="full-menu-cta reveal">
+                <a href="#" class="btn btn-outline" download>Download Full Menu (PDF) <i class="fa-solid fa-download" style="margin-left: 8px;"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section reviews">
+        <div class="container reviews-container">
+            <h2 class="section-title reveal">What Our Guests Say</h2>
+            
+            <div class="rating-overview reveal">
+                <div class="rating-score">3.9</div>
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="rating-count">Based on 1,209 Google Reviews</div>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card reveal reveal-delay-1">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">S</div>
+                        <div class="reviewer-info">
+                            <h4>Sachin Kumar</h4>
+                            <div class="rating-stars" style="font-size: 0.9rem; margin: 0;">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Quality food in heart of market/town, good staff, better service. Best ambiance for family gathering. Paneer dehati is a must try!"</p>
+                </div>
+                
+                <div class="review-card reveal reveal-delay-2">
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background:#555;">R</div>
+                        <div class="reviewer-info">
+                            <h4>Rakesh Singh</h4>
+                            <div class="rating-stars" style="font-size: 0.9rem; margin: 0;">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Middle recommendation, food tastes good but staff behavior a bit weird. The ambience is okay for small parties."</p>
+                </div>
+                
+                <div class="review-card reveal reveal-delay-3">
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background:#800;">A</div>
+                        <div class="reviewer-info">
+                            <h4>Amit Patel</h4>
+                            <div class="rating-stars" style="font-size: 0.9rem; margin: 0;">
+                                <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Service extremely poor, long waiting time during weekends. Food was warm but they really need to manage the crowd better."</p>
+                </div>
+            </div>
+            
+            <div class="leave-review reveal">
+                <a href="#" class="btn btn-primary">Leave a Review</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Gallery & Ambiance</h2>
+            
+            <div class="gallery-grid reveal">
+                <div class="gallery-item reveal">
+                    <img src="assets/images/gallery_1.png" alt="Restaurant Ambiance" class="gallery-img">
+                    <div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </div>
+                <div class="gallery-item reveal reveal-delay-1">
+                    <img src="assets/images/gallery_2.png" alt="Dining Section" class="gallery-img">
+                    <div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/plated_food.png" alt="Plated Food" class="gallery-img">
+                    <div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/images/gallery_4.png" alt="Dessert Setup" class="gallery-img">
+                    <div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </div>
+                <div class="gallery-item reveal reveal-delay-1">
+                    <img src="assets/images/gallery_5.png" alt="Dinner Setup" class="gallery-img">
+                    <div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </div>
+            </div>
+            
+            <div class="street-view reveal">
+                <!-- Google Maps Embed Placeholder -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14620.071191060377!2d85.50983805!3d23.6306001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f40c74df98c47d%3A0xc6cb1c20e2e283f5!2sThe%20Waves%20Restaurant!5e0!3m2!1sen!2sin!4v1689345000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot contact-icon"></i>
+                            <div>
+                                <strong>Address</strong>
+                                <p>1st Street, Ramgarh Cantonment,<br>Jharkhand 829122<br><small>(Google Maps Code: JGH8+6X)</small></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone contact-icon"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>080922 01666</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope contact-icon"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>info@thewavesramgarh.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-clock contact-icon"></i>
+                            <div>
+                                <strong>Hours</strong>
+                                <p>Daily: 10:00 AM – 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="logo" style="color: white; margin-bottom: 1rem;">
+                        <i class="fa-solid fa-water"></i> The Waves
+                    </a>
+                    <p>Serving high-quality North Indian, Chinese, and Mughlai dishes in the heart of Ramgarh Cantonment. Perfect for parties, gatherings, and family dining.</p>
+                    <div class="social-links" style="margin-top: 1.5rem;">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#menu">Menu</a>
+                        <a href="#reviews">Reviews</a>
+                        <a href="#contact">Contact Us</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <div class="footer-links">
+                        <a href="#">Dine-in</a>
+                        <a href="#">Takeaway</a>
+                        <a href="#">Catering</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Location</h4>
+                    <p style="opacity: 0.7; font-size: 0.9rem;">1st Street, Ramgarh Cantonment, Jharkhand 829122</p>
+                    <p style="opacity: 0.7; font-size: 0.9rem; margin-top: 1rem;"><i class="fa-solid fa-phone"></i> 080922 01666</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Waves Restaurant. All Rights Reserved. | Serving delicious food since 2018</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Compulsory Login Modal -->
+    <div class="login-overlay" id="loginOverlay">
+        <div class="login-modal">
+            <i class="fa-solid fa-xmark login-close" id="closeLoginBtn"></i>
+            <div class="login-header">
+                <i class="fa-solid fa-lock" style="color: var(--primary); font-size: 2rem; margin-bottom: 1rem; display: block;"></i>
+                <h2 style="color: var(--secondary); margin-bottom: 0.5rem;">Welcome to The Waves</h2>
+                <p style="color: #666; font-size: 0.95rem;">Please log in or create an account to continue browsing our delicious menu.</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="form-group" style="margin-bottom: 1rem;">
+                    <input type="email" class="form-control" placeholder="Email Address" required>
+                </div>
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                    <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+            </form>
+            
+            <p style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: #666;">
+                Don't have an account? <a href="#" style="color: var(--primary); font-weight: 600;">Sign up</a>
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
